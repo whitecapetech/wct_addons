@@ -2059,11 +2059,20 @@
     </record>
 
     <record id="pcg_433" model="account.account.template">
-      <field name="name">Opérations particulières avec l'État, les collectivités publiques, les organismes internationaux</field>
+      <field name="name">Opérationss particulières avec l'État, les collectivités publiques, les organismes internationaux</field>
       <field name="code">433</field>
+      <field name="type">view</field>
+      <field name="user_type" ref="account.data_account_type_view"/>
+      <field name="parent_id" ref="pcg_43"/>
+      <field name="reconcile" eval="True"/>
+    </record>
+
+    <record id="pcg_4331" model="account.account.template">
+      <field name="name">Timbre fiscale</field>
+      <field name="code">4331</field>
       <field name="type">other</field>
       <field name="user_type" ref="account.data_account_type_asset"/>
-      <field name="parent_id" ref="pcg_43"/>
+      <field name="parent_id" ref="pcg_433"/>
       <field name="reconcile" eval="True"/>
     </record>
 

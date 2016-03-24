@@ -1,19 +1,16 @@
 # -*- encoding: utf-8 -*-
 
 {
-    "name" : "Comptabilité - Tunisie",
+    "name" : "Tunisia - Accounting",
     "version" : "1.0",
-    "author" : "WHITECAPETECH",
+    "author" : "WHITECAPETECH : Sami RJIBA",
     "website": "http://www.whitecapetech.com",
     "category" : "Localization/Account Charts",
     "description": """
-Ce le module permet de gérer le plan comptable Tunisien en Odoo. 
-================================================================
-
-Ce Module charge modèle du plan de comptes standard Tunisien et permet de
-générer les états comptables aux normes tunisiennes (Bilan, CPC (comptes de
-produits et charges), balance générale à 6 colonnes, Grand livre cumulatif...).
-L'intégration comptable a été validé avec l'aide du Cabinet d'expertise comptable.""",
+This is the base module to manage Chart of Accounts and Taxes template for companies in Tunisia.
+=================================================================================================
+Ce Module charge le modèle du plan de comptes standard Tunisien et permet de générer les états
+comptables aux normes tunisiennes.""",
 
     "depends" : ['base','account'],
     "init_xml" : [],
@@ -28,6 +25,5 @@ L'intégration comptable a été validé avec l'aide du Cabinet d'expertise comp
     "demo_xml" : [],
     "active": True,
     "installable": True,
-	'images': ['images/config_chart_l10n_tn.jpg', 'images/l10n_tn_chart.jpg'],
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
