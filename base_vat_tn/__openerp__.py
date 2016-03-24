@@ -22,7 +22,7 @@
 {
     "name" : "Validateur de matricule fiscal - Tunisie",
     'version': '1.0',
-    "author" : "WHITECAPETECH",
+    "author" : "WHITECAPE TECHNOLOGIES",
     "website": "http://www.whitecapetech.com",
     'category': 'Accounting & Finance',
     'description': """
