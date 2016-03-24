@@ -24,7 +24,7 @@
     'version': '1.0',
     "author" : "WHITECAPETECH",
     "website": "http://www.whitecapetech.com",
-    'category': 'Hidden/Dependency',
+    'category': 'Accounting & Finance',
     'description': """
 Validateur de matricule fiscal - Tunisie.
 ============================================
