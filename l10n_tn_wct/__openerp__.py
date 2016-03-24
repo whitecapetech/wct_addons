@@ -3,7 +3,7 @@
 {
     "name" : "Tunisia - Accounting",
     "version" : "1.0",
-    "author" : "WHITECAPETECH : Sami RJIBA",
+    "author" : "WHITECAPE TECHNOLOGIES",
     "website": "http://www.whitecapetech.com",
     "category" : "Localization/Account Charts",
     "description": """
