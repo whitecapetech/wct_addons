@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_mail_form">
+            <field name="name">mail.form.view</field>
+            <field name="model">mail.mail</field>
+            <field name="inherit_id" ref="mail.view_mail_form"/>
+            <field name="type">form</field>
+            <field name="priority">120</field>
+            <field name="arch" type="xml">
+                <field name="headers" position="after">
+                    <field name="attempt_send"/>
+                </field>
+            </field>
+        </record>
+    </data>
+    <data noupdate="1">
+    	<record id="config_mail_attempt_send" model="ir.config_parameter">
+            <field name="key">mail_attempt_send</field>
+            <field name="value">5</field>
+        </record>
+    </data>
+</openerp>
