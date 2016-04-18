@@ -19,21 +19,10 @@
 #
 ##############################################################################
 
-import base64
-import logging
-from email.utils import formataddr
-from urlparse import urljoin
-
-import psycopg2
 
 from openerp import api, tools
-from openerp import SUPERUSER_ID
-from openerp.addons.base.ir.ir_mail_server import MailDeliveryException
 from openerp import models, fields, _
-from openerp.tools.safe_eval import safe_eval as eval
-from openerp.tools.translate import _
 
-_logger = logging.getLogger(__name__)
 
 
 class mail_mail(models.Model):
@@ -43,14 +32,10 @@ class mail_mail(models.Model):
 
     attempt_send = fields.Integer(default=0,string='Sending Attempts', readonly=True)
 
-
-    def write(self, cr, uid, ids, vals, context=None):
-        if 'state' in vals:
-            if vals['state'] == 'exception':
-                default_attempt_send = self.pool.get('ir.config_parameter').get_param(cr, uid, 'mail_attempt_send', default=5, context=context)
-                for mail in self.browse(cr, uid, ids):
-                    if mail.attempt_send < int(default_attempt_send):
-                        attempt_send = mail.attempt_send +1
-                        vals['state'] = 'outgoing'
-                        vals['attempt_send'] = attempt_send
-        super(mail_mail,self).write(cr, uid, ids, vals, context)
+    @api.constrains('state')
+    def _onchange_state(self):
+        default_attempt_send = self.env['ir.config_parameter'].get_param('mail_attempt_send', default=5)
+        if self.state == 'exception':
+            if self.attempt_send < int(default_attempt_send):
+                self.attempt_send += 1
+                self.state = 'outgoing'
