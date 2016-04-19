@@ -33,5 +33,8 @@
     'data': [
         'mail_send_attempts.xml'
     ],
+    "images": [
+		"images/wct.png",
+	],
     "installable": True
 }
