@@ -5,6 +5,7 @@
     "version" : "1.0",
     "author" : "WHITECAPE TECHNOLOGIES",
     "website": "http://www.whitecapetech.com",
+    'summary': 'Manage Chart of Accounts and Taxes template for companies in Tunisia',
     "category" : "Localization/Account Charts",
     "description": """
 This is the base module to manage Chart of Accounts and Taxes template for companies in Tunisia.
@@ -21,6 +22,9 @@ comptables aux normes tunisiennes.""",
 		'l10n_tn_wizard.xml',
         'security/ir.model.access.csv',
 		     ],
+    "images": [
+		"images/wct_tn.png",
+        ],
     "test": [],
     "demo_xml" : [],
     "active": True,

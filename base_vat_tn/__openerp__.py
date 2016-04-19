@@ -24,6 +24,7 @@
     'version': '1.0',
     "author" : "WHITECAPE TECHNOLOGIES",
     "website": "http://www.whitecapetech.com",
+    'summary': 'Validateur de matricule fiscal - Tunisie.',
     'category': 'Accounting & Finance',
     'description': """
 Validateur de matricule fiscal - Tunisie.
@@ -36,6 +37,9 @@ Ce module est validé par une cabinet d'expertise comptable.
     'data': ['base_vat_view.xml'],
     'installable': True,
     'auto_install': False,
+    "images": [
+		"images/wct_tn.png",
+        ],
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

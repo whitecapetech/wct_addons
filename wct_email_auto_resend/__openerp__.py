@@ -34,7 +34,7 @@
         'mail_send_attempts.xml'
     ],
     "images": [
-		"images/wct.png",
+		"images/wct_mail_auto_resend.png",
 	],
     "installable": True
 }
