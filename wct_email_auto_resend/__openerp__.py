@@ -26,7 +26,7 @@
     'summary': 'Resend failed emails automatically',
     'category': 'Mail',
     'description': """This module give you the possibility to configure the number of attempts to resend a failed email automatically.""",
-    'author': 'WHITECAPETECH',
+    'author': 'WHITECAPE TECHNOLOGIES',
     'license': 'AGPL-3',
     'website': "www.whitecapetech.com",
     "depends" : ['base','mail'],
