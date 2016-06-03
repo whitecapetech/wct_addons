@@ -19,25 +19,6 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-
-{
-    'name': 'Keyboard Shortcuts',
-    'version': '1.0',
-    'category': 'Tools',
-    'description': """
-    This module add some keyboard shortcuts:
-    """,
-    "author": "Whitecapetech",
-    "website": "http://www.Whitecapetech.com",
-    'depends': ['web'],
-    'init_xml': [],
-    'data': ['wct_keyboard_shortcuts.xml'],
-    'installable': True,
-    'active': True,
-}
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
-
 {
     'name': "Keyboard Shortcuts",
     'version': '1.0',
@@ -56,3 +37,7 @@
 	],
     "installable": True
 }
+
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
