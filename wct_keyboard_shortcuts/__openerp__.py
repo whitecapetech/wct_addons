@@ -25,7 +25,7 @@
     'summary': 'Make your casual work more easier with some useful keyboard shortcuts',
     'category': 'Tools',
     'description': """This module add some interesting keyboard shortcuts to make casual work more easier.""",
-    'author': 'WHITECAPETECH',
+    'author': 'WHITECAPE TECHNOLOGIES',
     'license': 'AGPL-3',
     'website': "www.whitecapetech.com",
     "depends" : ['web'],
