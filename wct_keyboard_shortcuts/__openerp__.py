@@ -37,3 +37,22 @@
     'active': True,
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
+{
+    'name': "Keyboard Shortcuts",
+    'version': '1.0',
+    'summary': 'Make your casual work more easier with some useful keyboard shortcuts',
+    'category': 'Tools',
+    'description': """This module add some interesting keyboard shortcuts to make casual work more easier.""",
+    'author': 'WHITECAPETECH',
+    'license': 'AGPL-3',
+    'website': "www.whitecapetech.com",
+    "depends" : ['web'],
+    'data': [
+        'wct_keyboard_shortcuts.xml'
+    ],
+    "images": [
+		"images/wct_keyboard_shortcuts.png",
+	],
+    "installable": True
+}
