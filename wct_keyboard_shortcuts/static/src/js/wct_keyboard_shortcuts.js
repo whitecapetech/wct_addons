@@ -105,7 +105,12 @@ $.ctrl('46', function() {
 //add item ctrl +
 //add item ctrl +
 $.ctrl('107', function() {
-	$("td.oe_form_field_x2many_list_row_add a").each(function() {
+	$("td.oe_form_field_one2many_list_row_add a").each(function() {
+		if($(this).parents('div:hidden').length == 0){
+			$(this).click();
+		}
+	});
+	$("td.oe_form_field_many2many_list_row_add a").each(function() {
 		if($(this).parents('div:hidden').length == 0){
 			$(this).click();
 		}
@@ -114,7 +119,12 @@ $.ctrl('107', function() {
 });
 //remove item ctrl -
 $.ctrl('109', function() {
-	$("td.oe_form_field_x2many_list_row_add").parent().prev().children('.oe_list_record_delete').children('.fa-trash-o').each(function() {
+	$("td.oe_form_field_one2many_list_row_add").parent().prev().children('.oe_list_record_delete').children('button.oe_i').each(function() {
+		if($(this).parents('div:hidden').length == 0){
+			$(this).click();
+		}
+	});
+	$("td.oe_form_field_many2many_list_row_add").parent().prev().children('.oe_list_record_delete').children('button.oe_i').each(function() {
 		if($(this).parents('div:hidden').length == 0){
 			$(this).click();
 		}
