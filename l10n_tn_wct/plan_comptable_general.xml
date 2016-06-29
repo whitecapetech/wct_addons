@@ -661,196 +661,196 @@
     <record id="pcg_2511" model="account.account.template">
       <field name="name">Actions</field>
       <field name="code">2511</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2518" model="account.account.template">
       <field name="name">Autres titres</field>
       <field name="code">2518</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_256" model="account.account.template">
       <field name="name">Autres formes de participation</field>
       <field name="code">256</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2571" model="account.account.template">
       <field name="name">Créances rattachées à des participations (groupe)</field>
       <field name="code">2571</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2574" model="account.account.template">
       <field name="name">Créances rattachées à des participations (hors groupe)</field>
       <field name="code">2574</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2575" model="account.account.template">
       <field name="name">Versements représentatifs d'apports non capitalisés (appel de fonds)</field>
       <field name="code">2575</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2576" model="account.account.template">
       <field name="name">Avances consolidables</field>
       <field name="code">2576</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2577" model="account.account.template">
       <field name="name">Autres créances rattachées à des participations</field>
       <field name="code">2577</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_258" model="account.account.template">
       <field name="name">Créances rattachées à des sociétés en participation</field>
       <field name="code">258</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_259" model="account.account.template">
       <field name="name">Versements restant à effectuer sur titres de participation non libérés</field>
       <field name="code">259</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2611" model="account.account.template">
       <field name="name">Actions</field>
       <field name="code">2611</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2618" model="account.account.template">
       <field name="name">Autres titres</field>
       <field name="code">2618</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2621" model="account.account.template">
       <field name="name">Obligations</field>
       <field name="code">2621</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
        <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2622" model="account.account.template">
       <field name="name">Bons</field>
       <field name="code">2622</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2641" model="account.account.template">
       <field name="name">Prêts participatifs</field>
       <field name="code">2641</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2642" model="account.account.template">
       <field name="name">Prêts aux associés</field>
       <field name="code">2642</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2643" model="account.account.template">
       <field name="name">Prêts au personnel</field>
       <field name="code">2643</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2645" model="account.account.template">
       <field name="name">Prêts assortis de sûretés (à subdiviser)</field>
       <field name="code">2645</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2648" model="account.account.template">
       <field name="name">Autres prêts</field>
       <field name="code">2648</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_265" model="account.account.template">
       <field name="name">Dépôts et cautionnements versés</field>
       <field name="code">265</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2651" model="account.account.template">
       <field name="name">Dépôts</field>
       <field name="code">2651</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2655" model="account.account.template">
       <field name="name">Cautionnements</field>
       <field name="code">2655</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2656" model="account.account.template">
       <field name="name">Dépôts bancaires non courants</field>
       <field name="code">2656</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2658" model="account.account.template">
       <field name="name">Autres</field>
       <field name="code">2658</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2661" model="account.account.template">
       <field name="name">Créances immobilisées</field>
       <field name="code">2661</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2667" model="account.account.template">
       <field name="name">Créances diverses</field>
       <field name="code">2667</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_2668" model="account.account.template">
       <field name="name">Autres créances non courantes</field>
       <field name="code">2668</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_269" model="account.account.template">
       <field name="name">Versements restant à effectuer sur titres de participation non libérés</field>
       <field name="code">269</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
@@ -892,63 +892,63 @@
     <record id="pcg_281" model="account.account.template">
       <field name="name">Amortissements des immobilisations incorporelles (même ventilation que celle du compte 21)</field>
       <field name="code">281</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_282" model="account.account.template">
       <field name="name">Amortissements des immobilisations corporelles (même ventilation que celle du compte 22)</field>
       <field name="code">282</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_284" model="account.account.template">
       <field name="name">Amortissements des immobilisations à statut juridique particulier</field>
       <field name="code">284</field>
-      <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_291" model="account.account.template">
       <field name="name">Provisions pour dépréciation des immobilisations incorporelles (même ventilation que celle du compte 21)</field>
       <field name="code">291</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_292" model="account.account.template">
       <field name="name">Provisions pour dépréciation des immobilisations corporelles (même ventilation que celle du compte 22)</field>
       <field name="code">292</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_293" model="account.account.template">
       <field name="name">Provisions pour dépréciation des immobilisations en cours (même ventilation que celle du compte 23)</field>
       <field name="code">293</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_294" model="account.account.template">
       <field name="name">Provisions pour dépréciation des immobilisations à statut juridique particulier</field>
       <field name="code">294</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_295" model="account.account.template">
       <field name="name">Provisions pour dépréciation des participations et des créances liées à des participations (même ventilation que celle du compte 25)</field>
       <field name="code">295</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
     <record id="pcg_296" model="account.account.template">
       <field name="name">Provisions pour dépréciation des autres immobilisations financières (même ventilation que celle du compte 26)</field>
       <field name="code">296</field>
-      <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+      <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
       <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
     </record>
 
