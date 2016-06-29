@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Note : I set a sequence of 10 on all VAT taxes, because it is then
+     easier to create an eco-tax with a lower sequence (VAT applies on the
+     amount of the eco-tax)
+-->
+
+    <!-- Account Tags -->
+
+        <record id="tax_18_0" model="account.account.tag">
+            <field name="name">18.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_12_0" model="account.account.tag">
+            <field name="name">12.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_6_0" model="account.account.tag">
+            <field name="name">6.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_ACH-18_0" model="account.account.tag">
+            <field name="name">ACH-18.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_ACH-12_0" model="account.account.tag">
+            <field name="name">ACH-12.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_ACH-6_0" model="account.account.tag">
+            <field name="name">ACH-6.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+
+        <record id="tax_IMMO_18_0" model="account.account.tag">
+            <field name="name">IMMO-18.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_IMMO_12_0" model="account.account.tag">
+            <field name="name">IMMO-12.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <record id="tax_IMMO-6_0" model="account.account.tag">
+            <field name="name">IMMO-6.0</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+
+<!-- VENTES Tax excluded from price -->
+    <record model="account.tax.template" id="tva_18">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA collectée (vente) 18,0%</field>
+      <field name="description">18.0</field>
+      <field name="amount" eval="18.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_4367110"/>
+      <field name="account_id" ref="pcg_4367110"/>
+      <field name="sequence" eval="18"/>
+      <field name="type_tax_use">sale</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_18_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_12">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA collectée (vente) 12,0%</field>
+      <field name="description">12.0</field>
+      <field name="amount" eval="12.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_4367110"/>
+      <field name="account_id" ref="pcg_4367110"/>
+      <field name="sequence" eval="12"/>
+      <field name="type_tax_use">sale</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_12_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_6">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA collectée (vente) 6,0%</field>
+      <field name="description">6.0</field>
+      <field name="amount" eval="6.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_4367110"/>
+      <field name="account_id" ref="pcg_4367110"/>
+      <field name="sequence" eval="6"/>
+      <field name="type_tax_use">sale</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_6_0')])]"/>
+    </record>
+
+
+<!-- ACHATS Tax excluded from price -->
+    <record model="account.tax.template" id="tva_acq_18">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déductible (achat) 18,0%</field>
+      <field name="description">ACH-18.0</field>
+      <field name="amount" eval="18.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436660"/>
+      <field name="account_id" ref="pcg_436660"/>
+      <!-- use sequence="9" instead of sequence="10" to make it
+      the default tax in the wizard
+      "Set Your Accounting Options" (wizard.multi.charts.accounts) -->
+      <field name="sequence" eval="18"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_ACH-18_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_acq_12">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déductible (achat) 12,0%</field>
+      <field name="description">ACH-12.0</field>
+      <field name="amount" eval="12.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436660"/>
+      <field name="account_id" ref="pcg_436660"/> 
+      <field name="sequence" eval="12"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_ACH-12_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_acq_6">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déductible (achat) 6,0%</field>
+      <field name="description">ACH-6.0</field>
+      <field name="amount" eval="6.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436660"/>
+      <field name="account_id" ref="pcg_436660"/>
+      <field name="sequence" eval="6"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_ACH-6_0')])]"/>
+    </record>
+
+<!-- ImmoBILISATIONS (achats) -->
+    <record model="account.tax.template" id="tva_imm_18">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déd./immobilisation (achat) 18,0%</field>
+      <field name="description">IMMO-18.0</field>
+      <field name="amount" eval="18.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436620"/>
+      <field name="account_id" ref="pcg_436620"/>
+      <field name="sequence" eval="18"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_IMMO_18_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_imm_12">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déd./immobilisation (achat) 12,0%</field>
+      <field name="description">IMMO-12.0</field>
+      <field name="amount" eval="12.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436620"/>
+      <field name="account_id" ref="pcg_436620"/>
+      <field name="sequence" eval="12"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_IMMO_12_0')])]"/>
+    </record>
+
+    <record model="account.tax.template" id="tva_imm_6">
+      <field name="chart_template_id" ref="l10n_tn_pcg_chart_template"/>
+      <field name="name">TVA déd./immobilisation (achat) 6,0%</field>
+      <field name="description">IMMO-6.0</field>
+      <field name="amount" eval="6.0"/>
+      <field name="amount_type">percent</field>
+      <field name="refund_account_id" ref="pcg_436620"/>
+      <field name="account_id" ref="pcg_436620"/>
+      <field name="sequence" eval="6"/>
+      <field name="type_tax_use">purchase</field>
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_tn.tax_IMMO-6_0')])]"/>
+    </record>
+
+</odoo>
