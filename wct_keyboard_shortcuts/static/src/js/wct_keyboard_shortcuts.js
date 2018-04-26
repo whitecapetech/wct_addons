@@ -30,6 +30,12 @@ $.ctrl('13', function() {
 			$(this).trigger('click');
 		}
 	});
+	// For kanban views
+	$('.oe_kanban_button_new').each(function() {
+		if($(this).parents('div:hidden').length == 0){
+			$(this).trigger('click');
+		}
+	});
 });
 //Edit the current object F2
 $.shortcut('113', function() {
